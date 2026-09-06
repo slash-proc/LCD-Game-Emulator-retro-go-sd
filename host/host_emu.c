@@ -287,6 +287,11 @@ void lcd_swap(void)
     host_maybe_quit();
 }
 
+uint32_t lcd_is_swap_pending(void)
+{
+    return 0;
+}
+
 void lcd_wait_for_vblank(void)
 {
     host_platform_delay_ms(1);
@@ -679,6 +684,13 @@ void odroid_system_init(int app_id, int sampleRate)
 {
     (void)app_id;
     odroid_audio_init(sampleRate);
+}
+
+void odroid_system_switch_app(int app)
+{
+    (void)app;
+    fprintf(stderr, "host: odroid_system_switch_app — exiting\n");
+    exit(1);
 }
 
 void odroid_system_emu_init(state_handler_t load_cb, state_handler_t save_cb,
