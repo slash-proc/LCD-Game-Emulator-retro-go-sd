@@ -579,8 +579,7 @@ void app_main_gw(uint8_t load_state, uint8_t start_paused, int8_t save_slot)
         /* get how many cycles have been spent in the emulator */
         proc_cycles = common_emu_get_dwt_cycles();
 
-        /* update the screen only if there is no pending frame to render */
-        if (!lcd_is_swap_pending() && drawFrame)
+        if (drawFrame)
         {
             gw_blit_frame();
             gw_debug_bar();

@@ -1,13 +1,10 @@
 # Changelog
 
-## [v0.0.1]
-
-Initial standalone Retro-Go SD core release of LCD-Game-Emulator (Nintendo Game & Watch / Sharp SM5xx LCD handhelds).
+## [v0.0.2]
 
 ### Added
 
-- Hot CPU/gfx code linked into ITCM (~13 KiB); large buffers (`GW_ROM`, JPEG
-  scratch, CPU state) stay in RAM_EMU — no ITCM data, AHB avoided for bulk allocations.
+- Nothing.
 
 ### Changed
 
@@ -15,7 +12,7 @@ Initial standalone Retro-Go SD core release of LCD-Game-Emulator (Nintendo Game 
 
 ### Fixed
 
-- Nothing.
+- Improved video sync.
 
 ### Install
 
