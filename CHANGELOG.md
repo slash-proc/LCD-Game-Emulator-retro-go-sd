@@ -1,6 +1,6 @@
 # Changelog
 
-## [v0.0.2]
+## [v0.0.3]
 
 ### Added
 
@@ -12,12 +12,13 @@
 
 ### Fixed
 
-- Improved video sync.
+- Fixed video sync.
 
 ### Install
 
 **Core**
 
-- Copy `LCD-Game-Emulator.bin` to `/cores/` on the SD card.
+- `LCD-Game-Emulator-vx.x.x.zip` — SD install archive. Unzip onto the **root** of the SD
+  card (creates `/cores/LCD-Game-Emulator.bin`).
 - Place ROMs under `/roms/gw/` (extension `.gw`).
 - Requires firmware whose ABI matches `SDK_VERSION` in this repository.
