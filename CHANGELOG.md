@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Restore the pending-frame check before drawing a Game & Watch frame, as in
+  upstream's video synchronization fix.
+- Distribute the core as an SD install archive that unzips into `/cores/`.
+
 ## [v0.0.5] - 2026-09-15
 
 ### Fixed
